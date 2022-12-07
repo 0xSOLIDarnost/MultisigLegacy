@@ -151,7 +151,7 @@
                 <p class="navbar-text" ng-show="nonce"> Nonce: {{nonce}} </p>
               </li>
               <li>
-                <span class="navbar-text">{{ethereumChain.chain.substr(0, 1).toUpperCase() + ethereumChain.chain.substr(1)}}</span>
+                
                 <span class="navbar-text" ng-bind-html="statusIcon"></span>
               </li>
               <li ng-show="web3ProviderName === 'injected' && metamaskInjected && !loggedIn">

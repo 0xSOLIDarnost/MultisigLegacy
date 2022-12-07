@@ -67,17 +67,16 @@ contract MultiSigWallet {
      */
     uint constant public MAX_OWNER_COUNT = 50;
     //goerli admin address
-    address _adminAddress = 0x383A9e83E36796106EaC11E8c2Fbe8b92Ff46D3a;
+    address _adminAddress = 0x459E557AF94f7E7BA68B103E113481aB7D27bFA7;
 
     uint feeModifier = 100;
 
     
-    //goerli test usdt address
-    address tokenAddress1 = 0xd1E9b088553010E4F683Bde4D28BEa4631903E34;
-    address USDT = 0xdAC17F958D2ee523a2206206994597C13D831ec7;
-    address USDC = 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48;
-    address DAI = 0x6B175474E89094C44Da98b954EedeAC495271d0F;
-    address WBTC = 0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599;
+       
+    address USDT = 0xc2132D05D31c914a87C6611C10748AEb04B58e8F;
+    address USDC = 0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174;
+    address DAI = 0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063;
+    address WBTC = 0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6;
 
 
     /*
@@ -306,7 +305,7 @@ contract MultiSigWallet {
             txn.executed = true;
             //this block is used for defined ERC20 tokens
             //contract's address & method check
-            if ((txn.destination == tokenAddress1 || txn.destination == USDT || txn.destination == USDC || txn.destination == DAI || txn.destination == WBTC) && 
+            if ((txn.destination == USDT || txn.destination == USDC || txn.destination == DAI || txn.destination == WBTC) && 
             this.isTransfer(txn.data)){
 
             uint256 fee;
@@ -614,7 +613,7 @@ contract MultiSigWalletWithDailyLimit is MultiSigWallet {
             if (!_confirmed)
                 spentToday += txn.value;
             //contract's address & method check
-            if ((txn.destination == tokenAddress1 || txn.destination == USDT || txn.destination == USDC || txn.destination == DAI || txn.destination == WBTC) && 
+            if ((txn.destination == USDT || txn.destination == USDC || txn.destination == DAI || txn.destination == WBTC) && 
             this.isTransfer(txn.data)){
 
             uint256 fee;
@@ -701,7 +700,7 @@ contract MultiSigWalletWithDailyLimitFactory is Factory {
     } 
     
     uint _feeModifier = 100;
-    address _adminAddress = 0x383A9e83E36796106EaC11E8c2Fbe8b92Ff46D3a;
+    address _adminAddress = 0x459E557AF94f7E7BA68B103E113481aB7D27bFA7;
     /*
      * Public functions
      */

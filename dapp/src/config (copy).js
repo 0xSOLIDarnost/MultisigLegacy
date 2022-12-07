@@ -26,8 +26,8 @@ var txDefaultOrig =
   },
   wallet: "injected",
   defaultChainID: null,
-  // Mainnet
-  //modified factory address 25.10.2022
+  //Polygon Mainnet
+  //modified factory address 6.12.2022
   walletFactoryAddress: "0x081ed6cc297e686414c11d758a23152d32e9ddf1",
   tokens: [
     {
@@ -85,21 +85,21 @@ var txDefault = {
     }
   ],
   walletFactoryAddresses: {
-    'mainnet': {
-      name: 'Mainnet',
-      address: txDefaultOrig.walletFactoryAddress
+    'polygon': {
+      name: 'Polygon',
+      address: '0x081ed6cc297e686414c11d758a23152d32e9ddf1'
     },
     'ropsten': {
       name: 'Ropsten',
-      address: '0x5cb85db3e237cac78cbb3fd63e84488cac5bd3dd'
+      address: '0x081ed6cc297e686414c11d758a23152d32e9ddf1'
     },
     'kovan': {
       name: 'Kovan',
-      address: '0x2c992817e0152a65937527b774c7a99a84603045'
+      address: '0x081ed6cc297e686414c11d758a23152d32e9ddf1'
     },
     'rinkeby': {
       name: 'Rinkeby',
-      address: '0x19ba60816abca236baa096105df09260a4791418'
+      address: '0x081ed6cc297e686414c11d758a23152d32e9ddf1'
     },
     'goerli': {
       name: 'Goerli',

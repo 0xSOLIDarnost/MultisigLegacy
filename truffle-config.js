@@ -59,6 +59,22 @@ module.exports = {
       networkCheckTimeout: 1000000,
        // eslint-disable-line camelcase
     },
+
+    /* polygon: {
+      provider: () => {
+        return new HDWalletProvider(polygonmnemonic, polygoninfura)
+      },
+      network_id: '137',
+      confirmations: 0,
+      gas: 7500000,
+      gasPrice: 70000000000,    // # of confs to wait between deployments. (default: 0)
+      timeoutBlocks: 50000,  // # of blocks before a deployment times out  (minimum/default: 50)
+      // skipDryRun: false,    // Skip dry run before migrations? (default: false for public nets )
+      networkCheckTimeout: 1000000,
+       // eslint-disable-line camelcase
+    }, */
+
+
     // Useful for testing. The `development` name is special - truffle uses it by default
     // if it's defined here and no other network is specified at the command line.
     // You should run a client (like ganache-cli, geth or parity) in a separate terminal

@@ -1,3 +1,14 @@
-0xF8Fef3F556A58D65Fe34Db891E00D195636657F6 фабрика 28.11.22
+06.12.22 Polygon Deployment (oh wow)
+
+
+0x081ed6cc297e686414c11d758a23152d32e9ddf1 - Polygon Modified Factory
+
+
+
+
+
+
+0x48E1ed88b6bD45F2C9B677fBD1d9cCa195237Adc -- our UNEDITED fee safe 
+
 
 
