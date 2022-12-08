@@ -37,7 +37,7 @@ module.exports = function(grunt) {
         ssl: {
 
             // the server root directory
-            root: './',
+            root: './src',
 
             // the server port
             // can also be written as a function, e.g.
